@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Game Options</title>
+    <style>
+        body {
+            background-image: url('startbg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 48px; 
+            font-family: 'Rubik Mono One'; 
+            margin-top: -50px; 
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            margin-top: 20px; 
+        }
+        
+        button {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px; 
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #fafafa;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+
+        button:hover {
+            background-color: #686868;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    
+    <div class="button-container">
+        <button onclick="startTwoPlayerGame()">
+            <img src="2player.png" alt="Button Image 1">
+        </button>
+        
+        <button onclick="startComputerGame()">
+            <img src="ai.png" alt="Button Image 2">
+        </button>
+    </div>
+
+    <script>
+        function startTwoPlayerGame() {
+            window.location.href = "two_player_game.html";
+        }
+
+        function startComputerGame() {
+            window.location.href = "computer_game.html";
+        }
+    </script>
+</body>
+</html>
